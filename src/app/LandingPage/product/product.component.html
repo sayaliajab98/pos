@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-4">
+            <mat-card style="width: 500px; margin-left:-40px; margin-top:10px;">
+                <!-- style="width: 700px; margin-left: -200px; margin-top:10px;" -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf='showTable' >
+                       <tr *ngIf='selecteditem'>
+                        <td>{{selecteditem.name}}</td>
+                        <td>{{selecteditem.price}}</td>
+                        <td><i class="glyphicon glyphicon-plus" (click)="IncquantityCount()"></i>{{quantity}}<i class="glyphicon glyphicon-minus" (click)="DecquantityCount()"></i></td>
+                        <td>{{selecteditem.price*quantity}}</td>
+                       </tr>
+                    </tbody>
+
+                    <tr class="bor"> 
+                        <th>Subtotal</th>
+                        <td colspan="2">0.00EUR</td>
+                        <td>0 Items</td>
+                      </tr>
+                     
+                     <tr class="bor"> 
+                        <th>vat tax</th>
+                       <td colspan="2">10%</td>
+                       <td >0.00EUR</td>
+                      </tr>
+                     
+                     <tr class="bor"> 
+                        <th>discount</th>
+                        <td colspan="2">10%</td>
+                        <td >0.00EUR</td>
+                      </tr>
+                     
+                     <tr class="bor"> 
+                        <th>total</th>
+                        <td colspan="3">0.00EUR</td>
+                     </tr>
+                 
+                </table>  
+            </mat-card>          
+        </div>   
+
+        <div class="col-md-8">
+            <mat-card style=" margin-left:100px; width:700px; margin-top:10px;">
+                <!-- style=" margin-left:80px; width:1000px; margin-top:10px;" -->
+            
+            <ul *ngFor="let item of products; let i = index" >
+              <img [src]="item.image"
+               matTooltip="product price:{{item.price}}
+                           product description:{{item.description}}" class="tool"
+               (click)="addRow(item);clickCount();toggleShowTable()" > 
+              <!-- <div class="middle">
+                <div class="text">product price:{{item.price}}</div> 
+              </div>  -->
+            </ul>  
+              
+            </mat-card>           
+        </div>   
+
+    </div>
+</div>

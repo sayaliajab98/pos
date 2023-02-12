@@ -1,0 +1,26 @@
+/* table{
+    border: 1px solid grey;
+    height: 500px;
+    width: 630px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+table,th,tr{
+    border: 0.5px solid grey;
+    height: 4px;
+} */
+
+table {
+    width: 100%;
+  }
+
+.bor{
+    border:0.1px solid gray;
+ }
+.tool{
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+  }
+  
