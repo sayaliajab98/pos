@@ -23,4 +23,22 @@ table {
     height: 100px;
     width: 100px;
   }
+
+  .btn1{
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .btn2{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 200px;
+  }
   
+  .mc1{
+    width: 500px;
+    margin-left:-40px;
+    margin-top:10px;
+    height:500px;    
+  }

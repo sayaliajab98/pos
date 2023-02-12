@@ -10,7 +10,7 @@ import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule} from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
-
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatTableModule,
     HttpClientModule,
     MatTooltipModule ,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

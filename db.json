@@ -27,20 +27,6 @@
        "category": "Clothing",
        "description": "winter jacket ",
        "image": "../../../assets/Images/jacket.jpg"
-       },
-       {
-        "name": "notebook",
-        "price": "190",
-        "category": "stationary",
-        "description": "notebbok ",
-        "image": "../../../assets/Images/notebook.jpg"
-        },
-        {
-            "name": "headphone",
-            "price": "190",
-            "category": "electronic",
-            "description": "headphone ",
-            "image": "../../../assets/Images/headphone.jpg"
-            }
+       }      
    ]
     }
